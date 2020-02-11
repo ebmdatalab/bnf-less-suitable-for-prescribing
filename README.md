@@ -1,4 +1,14 @@
-# EBM DataLab's skeleton notebook environment
+
+The [British National Formulary](https://www.bnf.org/) (BNF) is literally a book of most medicines used in the UK and gives information about doses of medicines, common side-effects and guidance on the drug manaagement of common conditions. It is accepted by doctors, nurses, pharmacists etc. as a trusted and authoritive source of information not just in the UK but worldwide. More information on the history of the BNF, content and publishers can be view on the [BNF website](https://www.bnf.org/)
+
+The BNF denotes some medicines as "less suitable for prescribing". In this notebook we investigate the current trends and variation of these medicines.
+
+
+
+
+
+
+# EBM DataLab's skeleton notebook environment - Information
 
 ![status](https://github.com/ebmdatalab/custom-docker/workflows/Notebook%20checks/badge.svg)
 
