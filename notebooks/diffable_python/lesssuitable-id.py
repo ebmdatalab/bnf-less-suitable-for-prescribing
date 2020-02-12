@@ -40,4 +40,7 @@ df
 df2= pd.json_normalize(hits)
 df2
 
-df3 = pd
+df3 = pd.json_normalize(hit["_source"])
+df3
+
+
