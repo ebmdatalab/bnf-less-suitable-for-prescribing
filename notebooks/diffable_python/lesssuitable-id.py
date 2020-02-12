@@ -43,8 +43,7 @@ df2
 df3 = pd.json_normalize(hit["_source"])
 df3
 
-df3 = pd.json_normalize(document)
-df3
+# ## lets try a different approach
 
 from itertools import count
 import requests
