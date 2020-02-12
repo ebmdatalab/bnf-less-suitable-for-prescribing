@@ -43,4 +43,25 @@ df2
 df3 = pd.json_normalize(hit["_source"])
 df3
 
+df3 = pd.json_normalize(document)
+df3
+
+from itertools import count
+import requests
+import pandas as pd
+drugs = []
+for page in count(1):
+    url = "https://bnf.nice.org.uk/search?q=%22less%20suitable%20for%20prescribing%20drug%22&page=" + str(page)
+    rsp = requests.get(url)
+    results = rsp.json()
+    hits = results["hits"]["hits"]
+    for hit in hits:
+        drugs.append(hit["_source"]["document"])
+    if not hits:
+        break
+df = pd.DataFrame(drugs)
+
+pd.set_option('display.max_colwidth',1000)
+df.head()
+
 
